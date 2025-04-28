@@ -35,14 +35,26 @@ http://localhost:8081/clinica/loguin.jsp
 
 ## 📂 Estructura principal del proyecto
 
-clinica/ ├── src/ │ └── java/ │ └── logica/ # Clases Java (Servlets, lógica del negocio) ├── web/ │ ├── login.jsp # Página de login │ ├── index.jsp # Página principal luego del login │ ├── errorLogin.jsp # Página de error de login │ └── componentes/ # Header, footer, etc. └── README.md
+clinica/
+├── src/
+│   ├── main/
+│   │   ├── java/
+│   │   │   ├── config/         # Configuraciones generales
+│   │   │   ├── persistencia/   # Controladores JPA (manejo de entidades)
+│   │   │   ├── models/         # Clases de entidades como Paciente, etc.
+│   │   │   ├── repositories/   # DAOs o conexiones a la base de datos
+│   │   │   ├── servlets/       # Todos los servlets como SVLogin, SVPaciente
+│   │   │   └── logica/         # Lógica de negocio (puede fusionarse con servicios)
+│   │   └── resources/
+│   │       ├── application.properties # Configuraciones de base de datos, etc.
+│   └── webapp/
+│       ├── login.jsp
+│       ├── index.jsp
+│       ├── errorLogin.jsp
+│       ├── componentes/        # Head, header, body, footer, etc.
+├── docs/                       # Documentación 
+└── pom.xml                     # Dependencias Maven
 
-
----
-
-## 💻 Captura de pantalla
-
-(¡Acá van imágenes!)
 
 ---
 
