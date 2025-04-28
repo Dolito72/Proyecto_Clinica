@@ -35,6 +35,8 @@ http://localhost:8081/clinica/loguin.jsp
 
 ## 📂 Estructura principal del proyecto
 
+```bash
+
 clinica/
 ├── src/
 │   ├── main/
@@ -51,10 +53,12 @@ clinica/
 │       ├── login.jsp
 │       ├── index.jsp
 │       ├── errorLogin.jsp
-│       ├── componentes/        # Head, header, body, footer, etc.
+│       └── componentes/        # Head, header, body, footer, etc.
 ├── docs/                       # Documentación 
 └── pom.xml                     # Dependencias Maven
 
+
+```
 
 ---
 
